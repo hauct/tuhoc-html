@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/flower.jpg");
+}
+
+h2 {
+  /* opacity: 0; */
+  /* display: none; */
+  visibility: hidden;
+}
