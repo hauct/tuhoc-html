@@ -1,0 +1,12 @@
+/* p:nth-of-type(3) {
+  color: blue;
+} */
+
+/* p:nth-child(3) {
+  color: blue;
+}
+ */
+p:only-of-type {
+  color: red;
+  font-size: 40px;
+}

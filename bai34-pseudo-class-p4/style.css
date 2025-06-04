@@ -1,9 +1,9 @@
-/* p:first-child {
+p:first-child {
   color: red;
   font-size: 30px;
 }
 
-p:last-child {
+/* p:last-child {
   color: blue;
   font-size: 30px;
 }
@@ -11,14 +11,14 @@ p:last-child {
 p:nth-child(2) {
   color: hotpink;
   font-size: 30px;
-}
- */
+} */
+
 /* p:nth-child(odd) {
   color: hotpink;
   font-size: 30px;
 } */
 
-p:nth-child(3n + 1) {
+/* p:nth-child(3n + 1) {
   color: hotpink;
   font-size: 30px;
-}
+} */
