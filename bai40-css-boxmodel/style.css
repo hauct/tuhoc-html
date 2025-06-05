@@ -2,7 +2,7 @@ div {
   height: 100px;
   width: 100px;
   color: yellow;
-  background-color: blue;
+  background-color: red;
   /* padding: 20px; */
   /* padding-bottom: 20px; */
   /* padding-top: 20px; */
@@ -15,6 +15,27 @@ div {
   /* trên - trái phải - dưới */
   padding: 20px 30px 40px;
 
-  /* trên - phải - dưới - trái */
+  /* trên - phải - dưới - trái (chiều kim đồng hồ) */
   padding: 20px 30px 40px 50px;
+
+  /* Viền */
+  /* border: 10px double blue; */
+
+  /* border-top: 10px solid pink;
+  border-left: 5px dashed black;
+  border-right: 5px dashed black;
+  border-bottom: 5px double black; */
+
+  /* border-width: 10px 20px 30px 40px;
+  border-style: solid dotted;
+  border-color: pink; */
+
+  /* border-radius: 30px; */
+  /* ghi tường minh */
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px; */
+
+  border-radius: 30px 50px 80px 90px;
 }
