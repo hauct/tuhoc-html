@@ -1,0 +1,26 @@
+h1 {
+  /* color: rgb(134, 32, 150);
+  color: rgb(134 32 150); */
+
+  /* kênh rgba
+  color: rgb(255, 0, 0, 0.75);
+  color: rgb(255 0 0 / 0.75);
+  background-color: blueviolet; */
+
+  color: #819a91;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  color: burlywood;
+  /* background-color: currentColor; */
+  outline: 5px solid currentColor;
+  outline-offset: 5px;
+}
+
+.box_child {
+  height: 50px;
+  width: 50px;
+  background-color: currentColor;
+}
