@@ -1,0 +1,12 @@
+.box {
+  height: 100vh;
+  background-image: url("img.jpg");
+  /*BG Không lặp lại*/
+  background-repeat: no-repeat;
+  /*BG lặp lại trục x*/
+  background-repeat: repeat-x;
+  /*BG lặp lại trục y*/
+  background-repeat: repeat-y;
+  /*BG lặp lại (mặc định)*/
+  background-repeat: repeat;
+}

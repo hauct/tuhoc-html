@@ -1,0 +1,22 @@
+.box {
+  height: 400px;
+  width: 200px;
+  background-image: url("img.jpg");
+  background-position: top left;
+  background-position: top right;
+  background-position: bottom left;
+  background-position: bottom right;
+  background-position: left;
+  background-position: right;
+  background-position: top;
+  background-position: bottom;
+  background-position: center;
+
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 60%;
+  margin-top: 50px;
+}
