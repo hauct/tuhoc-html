@@ -1,0 +1,17 @@
+.box {
+  height: 300px;
+  background-image: url("img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+}
+
+.test_local {
+  height: 200px;
+  width: 70%;
+  overflow: auto;
+  background-image: url("img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+}
