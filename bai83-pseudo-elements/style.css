@@ -1,0 +1,36 @@
+p::first-line {
+  color: red;
+}
+
+span::first-line {
+  color: blue;
+  background-color: yellow;
+}
+
+p::first-letter {
+  font-size: 40px;
+  color: blue;
+}
+
+::selection {
+  background-color: brown;
+  color: #fff;
+}
+
+li::marker {
+  color: blueviolet;
+  font-size: 40px;
+}
+
+.box::before {
+  content: "Em ở đằng trước";
+}
+
+.box::after {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: red;
+  border-radius: 99%;
+}

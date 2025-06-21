@@ -1,0 +1,38 @@
+:root {
+  --box-height: 100px;
+  --box-color: red;
+}
+.box1 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+.box2 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+.box3 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+
+.content {
+  --background-box: violet;
+}
+
+.box4 {
+  height: var(--box-height);
+  background-color: var(--background-box, green);
+}
+
+.detail {
+  --p_font-size: 30px;
+  /* fontsize: 30px */
+  font-size: var(--p_font-size);
+}
+
+.detail span {
+  font-size: var(--p_font-size);
+}

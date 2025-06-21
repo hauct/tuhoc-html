@@ -1,0 +1,12 @@
+.anh_demo {
+  max-width: 70%;
+  /* mẹo căn giữa */
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: aqua;
+  display: block;
+  margin: 0 auto;
+}

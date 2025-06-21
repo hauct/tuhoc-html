@@ -1,0 +1,8 @@
+.box {
+  height: 150px;
+  width: 150px;
+  margin: 100px;
+  background-color: pink;
+  box-shadow: 60px -16px teal;
+  box-shadow: inset 10px 35px 4px;
+}
