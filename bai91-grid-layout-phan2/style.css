@@ -1,0 +1,53 @@
+/* beauty CSS */
+.box1,
+.box4,
+.box5 {
+  background: aquamarine;
+}
+
+.box2,
+.box3 {
+  background: blue;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  /* Giá trị mặc định của cột và hàng trong Grid */
+  /* grid-template-columns: auto;
+  grid-template-rows: auto; */
+  /* grid-template-columns: 100px calc(100 - 100px);
+  grid-template-rows: 50px 100px; */
+
+  /* Gap */
+  /* Quy định gap dòng */
+  /* row-gap: 50px; */
+  /* Quy định gap cột */
+  /* column-gap: 15px; */
+  /* viết tắt */
+  /* gap: 50px;
+
+  /* Repeat */
+  /* grid-template-columns: 100px repeat(3, 50px);
+  grid-template-rows: 100px repeat(3, 50px); */
+
+  /* Chia theo trọng số */
+  /* grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 4fr; */
+
+  /* Gía trị auto */
+  grid-template-columns: 100px auto;
+  grid-template-rows: 50px auto;
+
+  /* Gía trị column */
+  grid-template-columns: minmax(150px, 300px) minmax(200px, auto);
+  grid-template-rows: repeat(2, minmax(50px, 80px));
+
+  /* Chỉ định chiều cao của dòng mặc định */
+  grid-auto-rows: auto;
+}

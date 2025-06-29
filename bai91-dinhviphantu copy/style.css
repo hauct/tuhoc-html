@@ -1,0 +1,30 @@
+/* beauty CSS */
+.box1,
+.box4,
+.box5 {
+  background: aquamarine;
+}
+
+.box2,
+.box3 {
+  background: blue;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 50px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.box1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
