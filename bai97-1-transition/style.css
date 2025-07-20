@@ -1,0 +1,19 @@
+.btn {
+  width: 200px;
+  height: 40px;
+  background: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* transition: 0.5s; */
+  /* transition-duration: 1s;
+  transition-property: background-color, color;
+  transition-delay: 3s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.14, 0.06); */
+  transition: 1s;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: red;
+}

@@ -1,0 +1,19 @@
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background: red;
+  color: #fff;
+  font-size: 3rem;
+  transition: 2s;
+  /* 1. Rotate (Xoay) */
+  /* transform: rotate(45); */
+  /* Có thể gõ tắt */
+  /* rotate: 45deg */
+
+  /* 2. Scale */
+}
+
+.box:hover {
+  transform: rotate(45deg);
+}

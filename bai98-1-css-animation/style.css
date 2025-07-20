@@ -1,0 +1,23 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: yellow;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin_element 1s linear 1s 3 reverse;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name: spin_element;
+  animation-duration: 5s;
+  animation-timing-function: linear; */
+}
+@keyframes spin_element {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

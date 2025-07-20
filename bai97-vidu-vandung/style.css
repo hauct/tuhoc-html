@@ -1,0 +1,26 @@
+body {
+  background: #000;
+}
+
+.header {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #011cff;
+  z-index: -1;
+  rotate: 5deg;
+  padding: 200px;
+  transform: translate(-5%, -30%);
+}

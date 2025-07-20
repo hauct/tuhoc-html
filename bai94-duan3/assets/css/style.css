@@ -753,3 +753,17 @@ a {
   font-size: 1.4rem;
   line-height: 1.86;
 }
+
+/* aos */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+}
+
+.work .section-heading {
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}

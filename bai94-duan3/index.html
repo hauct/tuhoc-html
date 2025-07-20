@@ -92,6 +92,13 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>shine smile</title>
+
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- header -->
@@ -174,6 +181,8 @@
                 src="./assets/img/hero-1.jpg"
                 alt="Our services"
                 class="service__img"
+                data-aos="zoom-in-down"
+                data-aos-anchor=".service__btn"
               />
             </figure>
             <!-- service right -->
@@ -263,7 +272,9 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section-heading">How it works</h2>
+          <h2 class="section-heading" data-aos="animate__flipInX">
+            How it works
+          </h2>
           <p class="section-desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -729,5 +740,15 @@
         </div>
       </div>
     </section>
+
+    <!-- js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+      });
+    </script>
   </body>
 </html>
