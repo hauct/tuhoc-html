@@ -20,9 +20,25 @@
   /* Căn lại vị trí menu icon */
   .menu-header__icon {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 38px;
+    left: 26px;
     color: #fff;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    background-color: blue;
+    inset: 20px;
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: hidden;
   }
 }
 
