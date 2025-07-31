@@ -92,7 +92,8 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>shine smile</title>
-
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- animation -->
     <link
       rel="stylesheet"
@@ -106,7 +107,11 @@
       <div class="container">
         <div class="header-top">
           <!-- logo -->
-          <img src="assets/img/logo.svg" alt="shine smile" class="logo" />
+          <img
+            src="assets/img/logo.svg"
+            alt="shine smile"
+            class="logo header__logo"
+          />
           <!-- navigation -->
           <div class="navbar">
             <ul class="navbar__list">
@@ -163,6 +168,21 @@
       </div>
     </header>
 
+    <!-- Tablet/mobile header -->
+    <div class="mobile-header">
+      <!-- tablet/mobile menu -->
+      <svg
+        class="menu-header__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+    </div>
+
     <!-- main -->
     <main>
       <!-- our service -->
@@ -181,8 +201,6 @@
                 src="./assets/img/hero-1.jpg"
                 alt="Our services"
                 class="service__img"
-                data-aos="zoom-in-down"
-                data-aos-anchor=".service__btn"
               />
             </figure>
             <!-- service right -->
