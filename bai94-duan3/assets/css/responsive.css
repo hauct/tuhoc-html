@@ -12,33 +12,34 @@
   .header-top {
     position: relative;
   }
-  .header-top .logo {
+  .header__logo {
     position: absolute;
     left: 50%;
-    transform: -50% -50%;
+    translate: -50% -50%;
   }
-  /* Căn lại vị trí menu icon */
+  /* 3. Căn lại vị trí menu icon */
   .menu-header__icon {
     position: absolute;
     top: 38px;
     left: 26px;
     color: #fff;
   }
-
+  /* 4. Code phần overlay */
   .menu-overlay {
     position: fixed;
-    background-color: blue;
-    inset: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
     z-index: 1;
     /* bình thường ẩn overlay đi */
     opacity: 0;
     visibility: hidden;
+    transition: 0.5s;
   }
 
   /* Kiểm tra nếu checkbox được check thì hiện overlay */
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
   }
 }
 
@@ -48,4 +49,11 @@
 
 /* mobile */
 @media (min-width: 992px) {
+}
+
+/* Tạm ẩn những phần không liên quan */
+.hero,
+.footer,
+main {
+  display: none;
 }
