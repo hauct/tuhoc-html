@@ -10,12 +10,72 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="mystyle.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="bg-danger">.bg-danger</div>
-    <div class="bg-warning">.bg-warning</div>
-    <div class="bg-danger bg-gradient">.bg-danger.bg-gradient</div>
+    <!-- text color -->
+    <!-- <p class="text-primary">.text-primary</p> -->
+
+    <!-- margin -->
+    <!-- <div class="mx-auto p-2" style="width: 200px">Centered element</div> -->
+
+    <!-- border -->
+    <!-- <div class="square bg-opacity-10 border border-primary m-3"></div> -->
+
+    <!-- column and row -->
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col border border-primary">1</div>
+        <div class="col border border-primary">2</div>
+        <div class="col border border-primary">3</div>
+        <div class="col border border-primary">4</div>
+        <div class="col border border-primary">5</div>
+        <div class="col border border-primary">6</div>
+        <div class="col border border-primary">7</div>
+        <div class="col border border-primary">8</div>
+        <div class="col border border-primary">9</div>
+        <div class="col border border-primary">10</div>
+        <div class="col border border-primary">11</div>
+        <div class="col border border-primary">12</div>
+      </div>
+      <!-- column size -->
+      <div class="row mb-3">
+        <div class="col-2 border border-primary text-center">1</div>
+        <div class="col-4 border border-primary text-center">2</div>
+        <div class="col border border-primary text-center">3</div>
+      </div>
+      <!-- column size with break point -->
+      <div class="row mb-3">
+        <div class="col-sm-2 border border-primary text-center">1</div>
+        <div class="col-sm-4 border border-primary text-center">2</div>
+        <div class="col-sm-6 border border-primary text-center">3</div>
+      </div>
+      <!-- Nếu không chỉ định số cột chiếm -> các cột sẽ auto chiếm diện tích như nhau -->
+      <div class="row mb-3">
+        <div class="col-sm border border-primary text-center">1</div>
+        <div class="col-sm border border-primary text-center">2</div>
+        <div class="col-sm border border-primary text-center">3</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col border border-primary text-center">1</div>
+        <div class="col border border-primary text-center">2</div>
+        <div class="col border border-primary text-center">3</div>
+      </div>
+      <!-- multiple breakpoints -->
+      <!-- Trong một khối div cũng có thể nhiều điểm dừng -->
+      <div class="row mb-3">
+        <div
+          class="col-sm-12 col-md-8 col-lg-4 border border-primary text-center"
+        >
+          x
+        </div>
+      </div>
+    </div>
+
     <!-- Nhúng js bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
