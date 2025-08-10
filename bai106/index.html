@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nhúng style bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Display utility classes that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0; and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+
+As such, the classes are named using the format:
+
+.d-{value} for xs
+.d-{breakpoint}-{value} for sm, md, lg, and xl.
+ -->
+    <!-- 1.d-none -->
+    <p class="bg-primary">Test Display 1</p>
+    <p class="bg-primary d-inline-block">Test Display 2</p>
+
+    <!-- 2.d-inline => Display inline -->
+    <div class="bg-secondary">ABC 123</div>
+    <span class="bg-danger">ABC 123</span>
+    <span class="bg-danger">ABC 123</span>
+    <div class="bg-secondary d-inline">ABC 123</div>
+
+    <!-- 3.d-block => Display block -->
+    <span class="bg-danger d-block mb-3"> dp inline hhhe</span>
+
+    <!-- 4.Kết hợp display với các break point -->
+    <span class="bg-danger d-none d-sm-block"> phần 4</span>
+    <div class="d-lg-none bg-primary">Ẩn phần tử này khi gặp vp lg</div>
+    <!-- Nhúng js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
