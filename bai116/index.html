@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nhúng style bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Nhúng my style -->
+    <link rel="stylesheet" href="mystyle.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- d-none -->
+    <p class="bg-primary d-none">Test display 1</p>
+    <p class="bg-primary">Test display 2</p>
+
+    <!-- 2.d-inline => Display inline -->
+    <div class="bg-secondary">abc 123</div>
+    <span class="bg-danger d-inline">dp inline</span>
+    <span class="bg-danger d-inline">dp inline</span>
+    <div class="bg-secondary d-inline">abc 123</div>
+
+    <!-- 3.d-block => Display block -->
+    <span class="bg-danger d-block mb-3">dp block</span>
+
+    <!-- 4. Kết hợp display với các breakpoint khác -->
+    <span class="bg-danger d-none d-sm-block">phàn 4</span>
+    <div class="d-lg-none bg-primary">Ẩn phần tử này khi gặp vp lg</div>
+
+    <!-- 5. Display với print -->
+    <div class="d-print-none">Screen Only (Hide on print only)</div>
+    <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+    <div class="d-none d-lg-block d-print-block">
+      Hide up to large on screen, but always show on print
+    </div>
+
+    <!-- 6. Display table -->
+    <!-- d-table: Sử dụng để hiển thị phần tử như một bảng html -->
+    <!-- d-table-row: Hiển thị phần tử dưới dạng hàng của bảng -->
+    <!-- d-table-cell: Hiển thị phần tử dưới dạng ô của bảng -->
+    <div class="d-table">
+      <div class="d-table-row">
+        <div class="d-table-cell p-2 border">Số thứ tự</div>
+        <div class="d-table-cell p-2 border">Tên</div>
+        <div class="d-table-cell p-2 border">Số điện thoại</div>
+      </div>
+      <div class="d-table-row">
+        <div class="d-table-cell p-2 border">1</div>
+        <div class="d-table-cell p-2 border">Nguyễn Văn A</div>
+        <div class="d-table-cell p-2 border">09xxxx</div>
+      </div>
+      <div class="d-table-row">
+        <div class="d-table-cell p-2 border">1</div>
+        <div class="d-table-cell p-2 border">Nguyễn Văn A</div>
+        <div class="d-table-cell p-2 border">09xxxx</div>
+      </div>
+    </div>
+
+    <!-- Nhúng js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
