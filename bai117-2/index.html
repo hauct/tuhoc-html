@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nhúng style bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Nhúng my style -->
+    <link rel="stylesheet" href="mystyle.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 117.2 Direction (Bài 98.5) -->
+    <!-- 
+      .flex-row -> flex-direction: row
+      .flex-row-reverse -> flex-direction: row-reverse
+      .flex-column -> flex-direction: column
+      .flex-column-reverse -> flex-direction: column-reverse
+    -->
+    <div class="d-flex border border-danger mb-3">
+      <div class="p-2 border border-primary">Flex item 1</div>
+      <div class="p-2 border border-primary">Flex item 2</div>
+      <div class="p-2 border border-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex border border-danger flex-row-reverse">
+      <div class="p-2 border border-primary">Flex item 1</div>
+      <div class="p-2 border border-primary">Flex item 2</div>
+      <div class="p-2 border border-primary">Flex item 3</div>
+    </div>
+
+    <div class="d-flex border border-danger flex-column mb-3">
+      <div class="p-2 border border-primary">Flex item 1</div>
+      <div class="p-2 border border-primary">Flex item 2</div>
+      <div class="p-2 border border-primary">Flex item 3</div>
+    </div>
+    <div class="d-flex border border-danger flex-column-reverse">
+      <div class="p-2 border border-primary">Flex item 1</div>
+      <div class="p-2 border border-primary">Flex item 2</div>
+      <div class="p-2 border border-primary">Flex item 3</div>
+    </div>
+    <!-- Nhúng js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
