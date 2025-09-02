@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nhúng Bootstrap CSS từ CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Nhúng file CSS tùy chỉnh -->
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    NAVBAR BOOTSTRAP 5:
+    1. navbar: Class chính để tạo thanh điều hướng
+    2. navbar-expand-lg: Navbar sẽ mở rộng (hiển thị đầy đủ menu) từ màn hình large (≥992px) trở lên
+    3. bg-primary: Áp dụng màu nền primary (xanh dương) cho navbar
+    -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <!-- 
+      CONTAINER:
+      - container-xl: Container có độ rộng tối đa cho màn hình extra large
+      - border: Class Bootstrap để thêm viền (có thể bỏ trong production)
+      -->
+      <div class="container-xl border">
+        <!-- NAVBAR BRAND: Logo hoặc tên thương hiệu -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- 
+        NAVBAR TOGGLER: Nút hamburger menu cho mobile
+        - Chỉ hiển thị khi navbar collapse (màn hình nhỏ hơn lg)
+        - data-bs-toggle="collapse": Kích hoạt chức năng collapse của Bootstrap
+        - data-bs-target="#navbarSupportedContent": Chỉ định element nào sẽ được collapse
+        - type="button": Xác định đây là button thông thường (không phải submit button)
+        -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Icon hamburger menu (3 gạch ngang) -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 
+        NAVBAR COLLAPSE: Phần menu có thể ẩn/hiện
+        - collapse: Class Bootstrap để tạo hiệu ứng collapse
+        - navbar-collapse: Class đặc biệt cho navbar collapse
+        - id phải trùng với data-bs-target của toggler button
+        -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- 
+          NAVBAR NAV: Danh sách các menu item
+          - navbar-nav: Class cho danh sách navigation
+          - me-auto: Margin-end auto (đẩy các element khác sang phải)
+          - mb-2 mb-lg-0: Margin-bottom responsive
+          -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- NAV ITEM: Mỗi item trong menu -->
+            <li class="nav-item">
+              <!-- nav-link active: Link đang được chọn -->
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <!-- DROPDOWN MENU -->
+            <li class="nav-item dropdown">
+              <!-- 
+              DROPDOWN TOGGLE:
+              - dropdown-toggle: Class tạo mũi tên dropdown
+              - data-bs-toggle="dropdown": Kích hoạt chức năng dropdown
+              - role="button": Accessibility - cho screen reader biết đây là button
+              -->
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <!-- DROPDOWN MENU: Danh sách các item trong dropdown -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <!-- Đường phân cách trong dropdown -->
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- NAV ITEM BỊ VÔ HIỆU HÓA -->
+            <li class="nav-item">
+              <!-- 
+              nav-link disabled: Link bị vô hiệu hóa
+              aria-disabled="true": Accessibility - thông báo cho screen reader
+              -->
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+          <!-- 
+          SEARCH FORM:
+          - d-flex: Display flex
+          - role="search": Accessibility - xác định đây là form tìm kiếm
+          -->
+          <form class="d-flex" role="search">
+            <!-- 
+            SEARCH INPUT:
+            - form-control: Class Bootstrap cho input
+            - me-2: Margin-end 2 (khoảng cách với button)
+            -->
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- 
+            SEARCH BUTTON:
+            - btn: Class chính cho button Bootstrap
+            - btn-outline-success: Button có viền màu success (xanh lá)
+            - type="submit": Button submit form
+            -->
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nhúng Bootstrap JavaScript từ CDN (bao gồm Popper.js) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
